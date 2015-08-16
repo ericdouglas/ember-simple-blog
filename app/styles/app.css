@@ -1,0 +1,45 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  width: 80%;
+  margin: 1em auto;
+}
+
+.container {
+  float: left;
+  width: 60%;
+}
+
+aside {
+  float: left;
+  width: 20%;
+}
+
+header {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 2em;
+  margin-bottom: 1em;
+}
+
+.btn {
+  padding: .5em 2em;
+  border-radius: 3px;
+}
+
+.btn:active {
+  position: relative;
+  top: 1px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn-submit {
+  background-color: #c0392b;
+  color: #fff;
+}
