@@ -35,6 +35,10 @@ header {
   top: 1px;
 }
 
+.btn:hover {
+  cursor: pointer;
+}
+
 .btn-submit {
   background-color: #c0392b;
   color: #fff;
