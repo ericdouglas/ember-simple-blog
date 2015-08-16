@@ -1,1 +1,8 @@
-{{create-new-post post=model.post createPost="createPost"}}
+<div class="container">
+  {{#each model.data as |post|}}
+    {{blog-post post=post}}
+  {{/each}}
+</div>
+<aside>
+  {{create-new-post post=model.post createPost="createPost"}}
+</aside>
