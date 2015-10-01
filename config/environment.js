@@ -4,7 +4,11 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'ember-simple-blog',
     environment: environment,
-    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+    contentSecurityPolicy: { 
+			'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com",
+      'font-src': "'self' data: fonts.gstatic.com",
+      'style-src': "'self' 'unsafe-inline' fonts.googleapis.com"
+	 	},
     firebase: 'https://ember-2-blog.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
@@ -19,11 +23,6 @@ module.exports = function(environment) {
       // Here you can pass flags/options to your application instance
       // when it is created
     },
-
-    contentSecurityPolicy: {
-      'font-src': "'self' data: fonts.gstatic.com",
-      'style-src': "'self' 'unsafe-inline' fonts.googleapis.com"
-    }
   };
 
   if (environment === 'development') {
